@@ -139,8 +139,6 @@ function doStuff(actalX, actalY, targetX, targetY){
 
     let parent_hash_map = {}
 
-    console.log(actalX, actalY, targetX, targetY)
-
     if(helpSolveChessBoard(actalX, actalY, targetX, targetY, parent_hash_map)) {
 
         let outputPath = getOutputPath(targetX, targetY, parent_hash_map)
@@ -158,6 +156,5 @@ function doStuff(actalX, actalY, targetX, targetY){
 }
 
 export default function(x, y, x1, y1){
-    console.log(x, y, x1, y1)
     return doStuff(x, y, x1, y1)
 }
